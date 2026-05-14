@@ -1,0 +1,134 @@
+:root{
+    --font-color: rgb(246, 246, 246);
+    --card-color1: #01febb;
+    --card-color2: #59558a;
+    --boby-color: #001331 ;
+    --font-size: 50px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: var(--boby-color);
+}
+.weatherContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 60px auto;
+    background: linear-gradient(135deg, var(--card-color1), var(--card-color2));
+    width: 400px;
+    min-width: 400px ;
+    height: 500px;
+    border-radius: 8px;
+}
+.data-container{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.weatherForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 10px;
+}
+.weatherForm input{
+    width: 250px;
+    height: 30px;
+    font-size: 1.2em;
+    padding: 4px;
+    border: none;
+    border-radius: 10px; 
+    outline: none;
+}
+.weatherForm button{
+    height: 30px;
+    width: 40px;
+    margin-left: 8px;
+    background-color: white;
+    border: none;
+    border-radius:10px ;
+}
+.descriptionEmoji{
+    display: flex;
+    justify-content: center;
+    font-size: 115px;
+    margin: 0 auto 20px auto;
+}
+.temperature{
+    margin: 0 auto 5px;
+    color: var(--font-color);
+    font-size: var(--font-size);
+}
+.celsius{
+    margin: 0 auto 5px;
+    color: var(--font-color);
+    font-size: 40px;
+}
+.cityName{
+    color: var(--font-color);
+    font-weight: normal;
+    margin: 0 auto 10px;
+    font-size: 35px;
+}
+.description{
+    color: var(--font-color);
+    font-size: 18px;
+    margin: 0 auto 10px;
+}
+.description::first-letter{
+    text-transform: uppercase;
+}
+.humidity, .wind-speed{
+    color: var(--font-color);
+    width: 50%;
+}
+
+.humidity{
+    position: relative;
+    bottom: -42px;
+    left: -10%;
+}
+.wind-speed{
+    position: relative;
+    bottom: -22px;
+    left: 35%;
+}
+.infoName{
+    position: relative;
+    top: 16px;
+    left: -35px;
+    font-size: smaller;
+}
+.wind-speed .infoName{
+    left: -58px;
+}
+
+
+.error{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--font-color);
+    font-size: 120px;
+    font-family: 'Times New Roman', Times, serif;
+    margin:20px ;
+}
+.errorDesc{
+    font-size: 45px;
+    margin: 0 auto;
+}
+.welcome{
+    font-size: 60px;
+    margin: 40% auto;
+    color: white;
+}
+
+

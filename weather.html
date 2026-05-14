@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="weatherContainer">
+        <form class="weatherForm">
+            <input type="text"  class="cityInput" placeholder="Enter city name">
+            <button type="submit" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <div class="welcome"><p>Welcome</p></div>
+        <div class="data-container">
+            <p class="descriptionEmoji">🌤️</p>
+            <p class="celsius"><span class="temperature">55</span>°C</p>
+            <h1 class="cityName">Addis Ababa</h1>
+            <p class="description">Sunny</p>
+            <p class="humidity"><span class="icon"><i class="fa-solid fa-water"></i></span><span class="humidity-value"> 75</span>%<span class="infoName"> Humidity</span> </p>
+            <p class="wind-speed"><span class="icon"><i class="fa-solid fa-wind"></i></span><span class="wind-speed-value"> 10</span> km/h<span class="infoName"> Wind Speed</span></p>
+        </div>
+        <span class="errorContainer">
+
+        </span>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
